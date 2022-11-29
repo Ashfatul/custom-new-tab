@@ -1,0 +1,17 @@
+{
+   "name": "Custom New Tab Customization",
+   "description": "This extension will change chromes default 'New Tab' page and display Custom page.",
+   "version": "1.1",
+   "manifest_version": 3,
+   "chrome_url_overrides": {
+      "newtab": "custom.html"
+   },
+   "action": {
+      "default_icon": {
+         "64": "/images/icon.png"
+      }
+   },
+   "icons": {
+      "64": "/images/icon.png"
+   }
+}

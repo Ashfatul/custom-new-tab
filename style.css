@@ -1,0 +1,91 @@
+/* Chrome New Tab Customization */
+/* Created by : Ashfatul */
+/* Created at : 27-04-22 */
+/* Extension URL : https://github.com/Ashfatul/chrome-new-tab-customization */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.extension-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.extension-container::after {
+    content: 'Created by Ashfatul | All right Reserve | 2022';
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    background: #000;
+    padding: 15px 0px;
+    color: #fff;
+    font-size: 15px;
+}
+.google{
+    width: 50%;
+    background: #063a53;
+    min-height: 100vh;
+}
+.duckduckgo{
+    width: 50%;
+    background: #052634;
+    min-height: 100vh;
+}
+img.google-logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+img.duckduckgo-logo{
+    width: 200px;
+    height: auto;
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+.google .content, .duckduckgo .content {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+}
+input.search-query {
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    /* font-weight: bold; */
+    font-family: cursive;
+    padding: 10px;
+    border: 0px;
+    padding-left: 60px;
+}
+input.search-query:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.search-icon{
+    background: #fff;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 1px solid lightgray;
+}
+@media (max-width: 850px){
+    .google{
+        width: 100%;
+    }
+    .duckduckgo{
+        width: 100%;
+    }
+}
+@media (max-width: 450px){
+    img.google-logo {
+        width: 200px;
+    }
+}
